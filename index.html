@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Busca CEP</title>
+        
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+       <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" text-white>Consulta CEP</a>
+                <div class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="CEP" id="cep">
+                    <button class="btn btn-outline-success my-2 my-sm-0" onclick="consultaCep()">Buscar</button>
+                </div> 
+       </nav>
+       
+       <section class="content">
+            <div class="container barra-progresso">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div>
+            </div>
+
+            <div class="container cep">
+                <div class="row">
+                        <h3 id="titulo_cep">CEP</h3>
+                </div>
+                <div class="row">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Logradouro</td>
+                                    <td id="logradouro"></td>
+                                </tr>
+                                <tr>
+                                    <td>Bairro</td>
+                                    <td id="bairro"></td>
+                                </tr>
+                                <tr>
+                                    <td>Localidade</td>
+                                    <td id="localidade"></td>
+                                </tr>
+                                <tr>
+                                    <td>UF</td>
+                                    <td id="uf"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+              <div class="left-col">      
+                
+                <p class="rights-text">© 2020 Weverton Sidnésio. Todos os Direitos Reservados.</p>
+                
+              </div>
+              
+              <div class="right-col">
+                <div class="social-media">
+                  <a href="#https://www.linkedin.com/in/weverton-sidnésio-0857b514a">
+                    <img src="img/linkedin.png" width="10%">
+                  </a>
+                  
+                  <a href="#https://github.com/weverton94">
+                    <img src="img/github.png" width="10%">
+                  </a>
+                                                    
+                </div>
+              </div>
+            </div>
+          </footer>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
